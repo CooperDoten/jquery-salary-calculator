@@ -1,11 +1,11 @@
 [x] index.html file
 [x] source jquery and script file
 [] create input fields for:
-    [] employee first name
-    [] last name
-    [] ID Number
-    [] job title
-    [] annual salary
+    [x] employee first name
+    [x] last name
+    [x] ID Number
+    [x] job title
+    [x] annual salary
 [] create submit button and capture click
 [] store array of employee objects 
 [] take each employee.salary

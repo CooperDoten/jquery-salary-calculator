@@ -6,10 +6,10 @@
     [x] ID Number
     [x] job title
     [x] annual salary
-[] create submit button and capture click
-[] store array of employee objects 
-[] take each employee.salary
-[] add each employee.salary
+[x] create submit button and capture click
+[x] store array of employee objects 
+[x] take each employee.salary
+[x] add each employee.salary
 [] append dom with total
 [] conditional IF total > 20000
 add red background to monthly costs

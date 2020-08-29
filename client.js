@@ -3,7 +3,8 @@ let employees = [];
 
 function onReady() {
     $('#submitButton').on('click', employeeData);
-  
+   
+    $(document).on('click', '#removeButton', onRemove);
 }
 
 function employeeData() {
@@ -18,7 +19,7 @@ function employeeData() {
     }
     $('.employeeList').append(`<tr><td>${newEmployee.firstName}</td> <td>${newEmployee.lastName}</td>
     <td>${newEmployee.idNumber}</td> <td>${newEmployee.jobTitle}</td>
-    <td>${newEmployee.annualSalary}</td> <td><button id="removeButton">Remove</button></tr>`);
+    <td>${newEmployee.annualSalary}</td> <td><button id="removeButton">Remove</button></td></tr>`);
 
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
@@ -48,13 +49,13 @@ function getEmployeeSalary() {
     if(total > 20000){
         $('.totalMonthly').addClass('red');
     }
-    onRemove();
    
 }
-
+let deletedEmployeeSalary = [];
 function onRemove() {
-    console.log('clicked remove button');
-   // $(this).remove();
+    console.log('in On remove');
+    $(this).closest('tr').remove();
+    $(this).deletedEmployeeSalary.push((employeeSalary));
 }
 
 

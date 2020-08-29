@@ -16,6 +16,7 @@ function employeeData() {
         jobTitle: $('#jobTitleInput').val(),
         annualSalary: $('#annualSalary').val()
     }
+    $('#firstNameOut').append(`${newEmployee.firstName}`);
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
     $('#idInput').val('');
@@ -40,11 +41,9 @@ function getEmployeeSalary() {
         total += Number(employeeSalaries[i]);
     }
     $('.totalMonthly').text(`Total Monthly: ${total}`);
-  
+   
 }
 
-
-   
 
 
 

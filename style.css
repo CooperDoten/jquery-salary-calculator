@@ -10,3 +10,6 @@ footer{
     color: whitesmoke;
     text-align: right;
 }
+.tableTop{
+    border: solid black 2px;
+}

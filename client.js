@@ -16,7 +16,10 @@ function employeeData() {
         jobTitle: $('#jobTitleInput').val(),
         annualSalary: $('#annualSalary').val()
     }
-    $('#firstNameOut').append(`${newEmployee.firstName}`);
+    $('#dataOutput').append(`<td>${newEmployee.firstName}</td> <td>${newEmployee.lastName}</td>
+    <td>${newEmployee.idNumber}</td> <td>${newEmployee.jobTitle}</td>
+    <td>${newEmployee.annualSalary}</td>`);
+
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
     $('#idInput').val('');

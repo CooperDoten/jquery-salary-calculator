@@ -10,6 +10,9 @@ footer{
     color: whitesmoke;
     text-align: right;
 }
-.tableTop{
-    border: solid black 2px;
+.employeeList{
+    width: 100%;
+}
+.firstNameRow{
+    display: block;
 }

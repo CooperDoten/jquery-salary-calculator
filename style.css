@@ -13,6 +13,11 @@ footer{
 .employeeList{
     width: 100%;
 }
-.firstNameRow{
-    display: block;
+table, th, tr, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+}
+.red{
+    background-color: red;
 }

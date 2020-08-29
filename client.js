@@ -16,9 +16,9 @@ function employeeData() {
         jobTitle: $('#jobTitleInput').val(),
         annualSalary: $('#annualSalary').val()
     }
-    $('#dataOutput').append(`<td>${newEmployee.firstName}</td> <td>${newEmployee.lastName}</td>
+    $('.employeeList').append(`<tr><td>${newEmployee.firstName}</td> <td>${newEmployee.lastName}</td>
     <td>${newEmployee.idNumber}</td> <td>${newEmployee.jobTitle}</td>
-    <td>${newEmployee.annualSalary}</td>`);
+    <td>${newEmployee.annualSalary}</td></tr>`);
 
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
@@ -41,9 +41,13 @@ function getEmployeeSalary() {
     console.log(employeeSalaries);
     let total = 0;
     for(let i=0; i<employeeSalaries.length; i++){
-        total += Number(employeeSalaries[i]);
+        (total += Number(employeeSalaries[i]) / 12);
     }
-    $('.totalMonthly').text(`Total Monthly: ${total}`);
+
+    $('.totalMonthly').text(`Total Monthly: ${Math.round(total)}`);
+    if(total > 20000){
+        $('.totalMonthly').addClass('red');
+    }
    
 }
 

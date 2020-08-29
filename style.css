@@ -8,10 +8,14 @@ footer{
     width: 100%;
     background-color: black;
     color: whitesmoke;
-    text-align: right;
+    height: 50px;
+    font-size: 25px;
+
 }
+
 .employeeList{
     width: 100%;
+    margin-top: 100px;
 }
 table, th, tr, td {
     border-collapse: collapse;
@@ -20,4 +24,9 @@ table, th, tr, td {
 }
 .red{
     background-color: red;
+}
+
+.totalMonthly{
+ text-align: center;
+ padding-left: 300px;
 }

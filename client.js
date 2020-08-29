@@ -2,34 +2,30 @@ $(document).ready(onReady);
 let employees = [];
 
 function onReady() {
-    $('#submitButton').on('click', employeeData)
+    $('#submitButton').on('click', employeeData);
+  
 }
 
 function employeeData() {
     console.log('in employeeData');
- 
+    
     const newEmployee = {
         firstName: $('#firstNameInput').val(),
         lastName: $('#lastNameInput').val(),
         idNumber: $('#idInput').val(),
         jobTitle: $('#jobTitleInput').val(),
-        annualSalary: $('#annualSalary').val(),
-
+        annualSalary: $('#annualSalary').val()
     }
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
     $('#idInput').val('');
     $('#jobTitleInput').val('');
     $('#annualSalary').val('');
-
     employees.push(newEmployee);
     console.log(employees)
 
     getEmployeeSalary();
 }
-
-
-
 
 function getEmployeeSalary() {
     let employeeSalaries = [];
@@ -43,7 +39,12 @@ function getEmployeeSalary() {
     for(let i=0; i<employeeSalaries.length; i++){
         total += Number(employeeSalaries[i]);
     }
-    console.log(total);
+    $('.totalMonthly').text(`Total Monthly: ${total}`);
+  
 }
+
+
+   
+
 
 

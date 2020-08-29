@@ -28,14 +28,22 @@ function employeeData() {
     getEmployeeSalary();
 }
 
-let employeeSalaries = [];
+
+
 
 function getEmployeeSalary() {
+    let employeeSalaries = [];
     console.log('in employee Salary')
     for (let i=0; i<employees.length; i++){
        let employeeSalary = employees[i].annualSalary;
        employeeSalaries.push(employeeSalary);
     }
+    console.log(employeeSalaries);
+    let total = 0;
+    for(let i=0; i<employeeSalaries.length; i++){
+        total += Number(employeeSalaries[i]);
+    }
+    console.log(total);
 }
-console.log(employeeSalaries);
+
 

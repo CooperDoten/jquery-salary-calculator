@@ -18,7 +18,7 @@ function employeeData() {
     }
     $('.employeeList').append(`<tr><td>${newEmployee.firstName}</td> <td>${newEmployee.lastName}</td>
     <td>${newEmployee.idNumber}</td> <td>${newEmployee.jobTitle}</td>
-    <td>${newEmployee.annualSalary}</td></tr>`);
+    <td>${newEmployee.annualSalary}</td> <td><button id="removeButton">Remove</button></tr>`);
 
     $('#firstNameInput').val('');
     $('#lastNameInput').val('');
@@ -48,9 +48,14 @@ function getEmployeeSalary() {
     if(total > 20000){
         $('.totalMonthly').addClass('red');
     }
+    onRemove();
    
 }
 
+function onRemove() {
+    console.log('clicked remove button');
+   // $(this).remove();
+}
 
 
 

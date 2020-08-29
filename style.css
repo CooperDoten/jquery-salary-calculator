@@ -15,7 +15,7 @@ footer{
 
 .employeeList{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 table, th, tr, td {
     border-collapse: collapse;
@@ -29,4 +29,10 @@ table, th, tr, td {
 .totalMonthly{
  text-align: center;
  padding-left: 300px;
+}
+.userData{
+    padding-bottom: 50px;
+}
+.tableTop{
+    font-size: 20px;
 }

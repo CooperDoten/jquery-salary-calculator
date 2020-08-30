@@ -1,18 +1,20 @@
 body{
-    background-color: white;
+    background-color: #668066;
 }
-footer{
+.heading{
+    background-color: #532222;
     position: fixed;
-    left: 0;
-    bottom: 0;
+    margin: 0;
     width: 100%;
-    background-color: black;
-    color: whitesmoke;
-    height: 50px;
-    font-size: 25px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
 
 }
-
+h2{
+    color: white;
+}
 .employeeList{
     width: 100%;
     margin-top: 50px;
@@ -22,17 +24,31 @@ table, th, tr, td {
     border: 2px solid black;
     text-align: center;
 }
+th{
+    background-color: #89859C;
+}
 .red{
     background-color: red;
 }
-
+.tableTop{
+    font-size: 20px;
+}
 .totalMonthly{
  text-align: center;
  padding-left: 300px;
 }
 .userData{
-    padding-bottom: 50px;
+    margin-top: 200px;
+    padding-bottom: 10px;
 }
-.tableTop{
-    font-size: 20px;
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #532222;
+    color: whitesmoke;
+    height: 50px;
+    font-size: 25px;
 }

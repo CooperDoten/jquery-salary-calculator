@@ -64,7 +64,6 @@ function onRemove() {
     $(this).parent().parent().empty();
      getEmployeeSalary();
 
-    
 }
 /* added a comma to display look nice!
 https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript

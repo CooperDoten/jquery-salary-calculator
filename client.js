@@ -48,9 +48,9 @@ function getEmployeeSalary() {
         (total += Number(employeeSalaries[i]) / 12); //change annual salary to monthly
     }
 
-    $('.totalMonthly').text(`Total Monthly: ${Math.round(total)}`); //round off number( wouldn't do in real situation )
+    $('.totalMonthly').text(`Total Monthly: ${numberWithCommas(Math.round(total))}`); //round off number( wouldn't do in real situation )
     if(total > 20000){
-        $('.totalMonthly').addClass('red'); // if more than 20000/month change background to red
+        $('footer').addClass('red'); // if more than 20000/month change background to red
     }
 }
 
@@ -64,3 +64,9 @@ function onRemove() {
    getEmployeeSalary();
 }
 
+
+
+function numberWithCommas(x) {
+    console.log('in numberWithCommas')
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

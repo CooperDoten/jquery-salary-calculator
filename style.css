@@ -10,17 +10,13 @@ body{
     left: 0;
     text-align: center;
     color: white;
-    height: 150px;
-
-}
-h1{
-    margin-top: 0;
 }
 h2{
     color: white;
 }
 .employeeList{
     width: 100%;
+    margin-top: 50px;
 }
 table, th, tr, td {
     border-collapse: collapse;
@@ -30,19 +26,32 @@ table, th, tr, td {
 th{
     background-color: #89859C;
 }
+.employeeList tr:nth-child(odd){ 
+    background: #b8d1f3;
+}
+.employeeList tr:nth-child(even){
+    background: #dae5f4;
+}
+
 .red{
     background-color: red;
+}
+.brown{
+    background-color: #532222;
 }
 .tableTop{
     font-size: 20px;
 }
-
+.totalMonthly{
+ text-align: center;
+ padding-left: 300px;
+}
 .userData{
     margin-top: 200px;
     padding-bottom: 10px;
 }
 
-.totalMonthly{
+footer{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -51,13 +60,5 @@ th{
     color: whitesmoke;
     height: 100px;
     font-size: 25px;
-    text-align: center;
-    padding-left: 150px;
 }
 
-	.employeeList tr:nth-child(odd){ 
-		background: #b8d1f3;
-	}
-	.employeeList tr:nth-child(even){
-		background: #dae5f4;
-	}

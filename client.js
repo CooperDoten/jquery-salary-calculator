@@ -52,6 +52,9 @@ function getEmployeeSalary() {
     if(total > 20000){
         $('footer').addClass('red'); // if more than 20000/month change background to red
     }
+   if(total < 20000){
+       $('footer').addClass('brown');
+   }
 }
 
 function onRemove() {

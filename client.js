@@ -63,6 +63,7 @@ function onRemove() {
     console.log('in On remove', deletedEmployee);
     $(this).parent().parent().empty();
      getEmployeeSalary();
+
     
 }
 /* added a comma to display look nice!

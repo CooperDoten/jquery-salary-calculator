@@ -52,3 +52,10 @@ footer{
     height: 50px;
     font-size: 25px;
 }
+
+	.employeeList tr:nth-child(odd){ 
+		background: #b8d1f3;
+	}
+	.employeeList tr:nth-child(even){
+		background: #dae5f4;
+	}
